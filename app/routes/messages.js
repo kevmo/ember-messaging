@@ -4,6 +4,8 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     model() {
         return this.store.findAll('message')
-        // return this.store.query('message');
+
+        // another way to get the data:
+        // var data = Ember.$.getJSON('http://private-227b9-jsonapifizzbuzz.apiary-mock.com/messages');
   }
 });
