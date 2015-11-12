@@ -5,15 +5,13 @@
     <div class=event>
         <div class="label"><img src="{{ message.pic }}" /></div>
         <div class="content">
-            <div class="summary">
-                {{ message.message }}
-            </div>
-            <div class="meta">
-                <strong>{{ message.useragent }} </strong>
-                <span class="date">
-                    {{ message.date }}
-                </span>
-            </div>
+            <span class="summary">
+                {{ message.message }} <br>
+                {{ message.useragent }}
+            </span>
+            <span class="meta">
+                {{ message.date }}
+            </span>
         </div>
     </div>
 {{/each}}
