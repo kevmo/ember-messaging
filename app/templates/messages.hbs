@@ -1,6 +1,20 @@
 {{outlet}}
-HIIIII
 
+<div class="ui feed">
 {{#each model as |message|}}
-    <div>{{ message.pic }}</div>
+    <div class=event>
+        <div class="label"><img src="{{ message.pic }}" /></div>
+        <div class="content">
+            <div class="summary">
+                {{ message.message }}
+            </div>
+            <div class="meta">
+                <strong>{{ message.useragent }} </strong>
+                <span class="date">
+                    {{ message.date }}
+                </span>
+            </div>
+        </div>
+    </div>
 {{/each}}
+</div>
